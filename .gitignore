@@ -1,5 +1,9 @@
+# Rust builds
 /target
 
 # IDEs
 .idea
 .vscode
+
+# Environment variables
+.env
