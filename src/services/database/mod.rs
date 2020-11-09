@@ -1,0 +1,3 @@
+/*
+    Could be configuration functions and operations with database
+*/

@@ -1,8 +1,13 @@
 #[macro_use]
 extern crate actix_web;
 
-mod router;
 mod api;
+mod entities;
+mod middlewares;
+mod router;
+mod services;
+mod tools;
+mod lib;
 
 use actix_web::{App, HttpServer};
 use dotenv;
