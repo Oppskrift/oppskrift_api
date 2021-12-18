@@ -9,8 +9,8 @@ use actix_web::{App, HttpServer};
 pub async fn launch_server() {
     logger::init();
 
-    let host = Env::get_var(&Env::Host);
-    let port = Env::get_var(&Env::Port);
+    let host = Env::Host.get_value();
+    let port = Env::Port.get_value();
 
     let address = format!("{}:{}", host, port);
     let database_pool = database::get_pool();
