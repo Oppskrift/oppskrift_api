@@ -1,11 +1,8 @@
-struct User {
-    email: String,
-}
+use crate::entities::cookbook::Cookbook;
 
-impl User {
-    fn new(email: &str) -> Self {
-        User {
-            email: email.to_owned(),
-        }
-    }
+pub struct User {
+    name: String,
+    email: String,
+    friends: Vec<User>,
+    cookbooks: Vec<Cookbook>,
 }
