@@ -1,11 +1,8 @@
-struct Cookbook {
-    name: String,
-}
+use super::{recipe::Recipe, user::User};
 
-impl Cookbook {
-    fn new(name: &str) -> Self {
-        Cookbook {
-            name: name.to_owned(),
-        }
-    }
+pub struct Cookbook {
+    name: String,
+    description: String,
+    owner: User,
+    recipes: Vec<Recipe>,
 }

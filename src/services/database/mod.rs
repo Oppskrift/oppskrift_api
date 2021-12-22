@@ -1,4 +1,9 @@
+mod cookbook_model;
+mod recipe_model;
+mod user_model;
+
 use crate::services::env::Env;
+
 use diesel::r2d2::ConnectionManager;
 use diesel::PgConnection;
 use r2d2::Pool;
